@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="et">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Tangerine&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Angela Otsar Photography</title>
+    <link rel="icon" href="images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        p{
+            text-align: justify;
+            width:60%;
+            margin-left: 20%;
+            margin-bottom: 2%;
+        }
+
+        @media screen and (max-width: 600px) {
+            p{
+                width:90%;
+                margin-left: 5%;
+            }
+
+            h3{
+                margin-left: 5%;
+                font-size: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2 class="logo">Angela Foto</h2>
+        <div class="topnav" id="myTopnav">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i>
+                <a link rel="stylesheet" href="esileht.html">Esileht</a>
+                <a link rel="stylesheet" href="portfolio.html">Portfolio</a>
+                <a link rel="stylesheet" href="minust.html">Minust</a>
+                <a link rel="stylesheet" href="hinnakiri.html">Hinnakiri</a>
+                <a link rel="stylesheet" href="kontakt.html">Kontakt</a>
+    
+        </div>
+    </header>
+    <div class="soovitus">
+        <h3>Soovitusi fotograafilt:</h3>
+        <br>
+        <p>*  Riietus pildistamiseks võiks olla mugav ja neutraalsetes toonides. </p>
+        <p>*  Toonid mis sobivad minu töötlusestiiliga on pastelsed, näiteks: beež, valge, mahe roheline, pruunikad toonid
+            jne. </p>
+        <p>*  Samuti jäävad teksad kui ka teksajakk pildil hea. </p>
+        <p>*  Kui tuled pildistamisele mitmekesi, nt. perega, siis riietused võiksid sobida omavahel kokku.</p>
+        <p>*  Ei soovita neoonvärve, mustreid ja erinevaid pildikesi särkidel/pluusidel</p>
+        <p>*  Naistel soovitan pildistamiseks teha kindlasti fotomeik. Omast kogemusest saan öelda, et meik annab pildile
+            palju juurde.</p>
+        <p>*  Saan jagada soovitusi jumestaja valikul. </p>
+    </div>
+
+    <br>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+</body>
+
+</html>

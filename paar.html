@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="et">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Tangerine&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Angela Otsar Photography</title>
+    <link rel="icon" href="images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        width: 100%;
+        height: 100%;
+    }
+
+    .trans {
+        transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+        -o-transition: all 1s ease;
+        -webkit-transition: all 1s ease;
+    }
+
+    .top {
+        display: flex;
+        width: 80vw;
+        height: 100vh;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10vh;
+    }
+
+    @media screen and (min-width:600px) {
+        .top {
+            width: 85vw;
+            height: 240vh;
+        }
+    }
+
+    .top ul {
+        list-style: none;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        box-sizing: border-box;
+    }
+
+    .top ul li {
+        position: relative;
+        float: left;
+        width: 25%;
+        height: 25%;
+        overflow: hidden;
+    }
+
+    @media screen and (max-width:600px) {
+        .top ul li {
+            width: 33%;
+            height: 18%;  
+        }
+    }
+
+    .top ul li::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        content: '';
+        color: white;
+        opacity: 0.2;
+        text-align: center;
+        box-sizing: border-box;
+        pointer-events: none;
+        transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        -webkit-transition: all 0.5s ease;
+    }
+
+    .top ul li:hover::before {
+        opacity: 0;
+        background-color: rgba(0, 0, 0, 0.90);
+    }
+
+    .top ul li img {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+
+    .lightbox {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.75);
+        z-index: 1001;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .lightbox img {
+        max-width: 90%;
+        max-height: 90%;
+        position: relative;
+        top: -100%;
+        /* Transition */
+        transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+        -o-transition: all 1s ease;
+        -webkit-transition: all 1s ease;
+    }
+
+    .lightbox:target {
+        outline: none;
+        top: 0;
+        opacity: 1;
+        pointer-events: auto;
+        transition: all 1.2s ease;
+        -moz-transition: all 1.2s ease;
+        -ms-transition: all 1.2s ease;
+        -o-transition: all 1.2s ease;
+        -webkit-transition: all 1.2s ease;
+    }
+
+    .lightbox:target img {
+        top: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+    }
+
+    .tagasi {
+        float: center;
+        margin-bottom: 5vh;
+        font-family: 'Tangerine', cursive;
+        font-size: 50px;
+        color: rgb(120, 112, 112);
+
+    }
+
+    a:link {
+        text-decoration: none;
+    }
+
+    a:visited {
+        text-decoration: none;
+        color: rgb(120, 112, 112);
+    }
+</style>
+
+
+<body>
+    <header>
+        <h2 class="logo">Angela Foto</h2>
+        <div class="topnav" id="myTopnav">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i>
+                <a link rel="stylesheet" href="esileht.html">Esileht</a>
+                <a link rel="stylesheet" href="portfolio.html">Portfolio</a>
+                <a link rel="stylesheet" href="minust.html">Minust</a>
+                <a link rel="stylesheet" href="hinnakiri.html">Hinnakiri</a>
+                <a link rel="stylesheet" href="kontakt.html">Kontakt</a>
+    
+        </div>
+    </header>
+    <div class="container">
+        <div class="top">
+            <ul>
+                <li><a href="#img_1"><img src="images/paarid/DSC00871.jpg"></a></li>
+                <li><a href="#img_2"><img src="images/paarid/_DSC0565.jpg"></a></li>
+                <li><a href="#img_3"><img src="images/paarid/_DSC0603.jpg"></a></li>
+                <li><a href="#img_4"><img src="images/paarid/_DSC1344.jpg"></a></li>
+                <li><a href="#img_5"><img src="images/paarid/_DSC1406.jpg"></a></li>
+                <li><a href="#img_6"><img src="images/paarid/DSC00074.jpg"></a></li>
+                <li><a href="#img_7"><img src="images/paarid/DSC00197-2.jpg"></a></li>
+                <li><a href="#img_8"><img src="images/paarid/DSC00268.jpg"></a></li>
+                <li><a href="#img_9"><img src="images/paarid/DSC00326.jpg"></a></li>
+                <li><a href="#img_10"><img src="images/paarid/DSC00566-2.jpg"></a></li>
+                <li><a href="#img_11"><img src="images/paarid/DSC00589.jpg"></a></li>
+                <li><a href="#img_12"><img src="images/paarid/DSC00598.jpg"></a></li>
+                <li><a href="#img_13"><img src="images/paarid/DSC00615.jpg"></a></li>
+                <li><a href="#img_14"><img src="images/paarid/DSC00712.jpg"></a></li>
+                <li><a href="#img_15"><img src="images/paarid/DSC00719.jpg"></a></li>
+                <li><a href="#img_16"><img src="images/paarid/DSC00969.jpg"></a></li>
+                <li><a href="#img_17"><img src="images/paarid/DSC04175.jpg"></a></li>
+                <li><a href="#img_18"><img src="images/paarid/DSC04619.jpg"></a></li>
+                <li><a href="#img_19"><img src="images/paarid/DSC04626.jpg"></a></li>
+                <li><a href="#img_20"><img src="images/paarid/DSC04663.jpg"></a></li>
+                <li><a href="#img_21"><img src="images/paarid/DSC08127.jpg"></a></li>
+                <li><a href="#img_22"><img src="images/paarid/DSC09592.jpg"></a></li>
+                <li><a href="#img_23"><img src="images/paarid/DSC09676.jpg"></a></li>
+                <li><a href="#img_24"><img src="images/paarid/Image-59.jpg"></a></li>
+
+
+            </ul>
+            <a href="#_1" class="lightbox trans" id="img_1"><img src="images/paarid/DSC00871.jpg"></a>
+            <a href="#_2" class="lightbox trans" id="img_2"><img src="images/paarid/_DSC0565.jpg"></a>
+            <a href="#_3" class="lightbox trans" id="img_3"><img src="images/paarid/_DSC0603.jpg"></a>
+            <a href="#_4" class="lightbox trans" id="img_4"><img src="images/paarid/_DSC1344.jpg"></a>
+            <a href="#_5" class="lightbox trans" id="img_5"><img src="images/paarid/_DSC1406.jpg"></a>
+            <a href="#_6" class="lightbox trans" id="img_6"><img src="images/paarid/DSC00074.jpg"></a>
+            <a href="#_7" class="lightbox trans" id="img_7"><img src="images/paarid/DSC00197-2.jpg"></a>
+            <a href="#_8" class="lightbox trans" id="img_8"><img src="images/paarid/DSC00268.jpg"></a>
+            <a href="#_9" class="lightbox trans" id="img_9"><img src="images/paarid/DSC00326.jpg"></a>
+            <a href="#_10" class="lightbox trans" id="img_10"><img src="images/paarid/DSC00566-2.jpg"></a>
+            <a href="#_11" class="lightbox trans" id="img_11"><img src="images/paarid/DSC00589.jpg"></a>
+            <a href="#_12" class="lightbox trans" id="img_12"><img src="images/paarid/DSC00598.jpg"></a>
+            <a href="#_13" class="lightbox trans" id="img_13"><img src="images/paarid/DSC00615.jpg"></a>
+            <a href="#_14" class="lightbox trans" id="img_14"><img src="images/paarid/DSC00712.jpg"></a>
+            <a href="#_15" class="lightbox trans" id="img_15"><img src="images/paarid/DSC00719.jpg"></a>
+            <a href="#_16" class="lightbox trans" id="img_16"><img src="images/paarid/DSC00969.jpg"></a>
+            <a href="#_17" class="lightbox trans" id="img_17"><img src="images/paarid/DSC04175.jpg"></a>
+            <a href="#_18" class="lightbox trans" id="img_18"><img src="images/paarid/DSC04619.jpg"></a>
+            <a href="#_19" class="lightbox trans" id="img_19"><img src="images/paarid/DSC04626.jpg"></a>
+            <a href="#_20" class="lightbox trans" id="img_20"><img src="images/paarid/DSC04663.jpg"></a>
+            <a href="#_21" class="lightbox trans" id="img_21"><img src="images/paarid/DSC08127.jpg"></a>
+            <a href="#_22" class="lightbox trans" id="img_22"><img src="images/paarid/DSC09592.jpg"></a>
+            <a href="#_23" class="lightbox trans" id="img_23"><img src="images/paarid/DSC09676.jpg"></a>
+            <a href="#_24" class="lightbox trans" id="img_24"><img src="images/paarid/Image-59.jpg"></a>
+
+        </div>
+    </div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+</body>
+
+</html>

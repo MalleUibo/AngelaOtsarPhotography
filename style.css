@@ -1,0 +1,362 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+.logo{
+  padding-right: 2%;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: white;
+  padding-right: 35px;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.topnav a {
+  float: right;
+  display: block;
+  display: hidden;
+  color: rgb(120, 112, 112);
+  text-align: center;
+  padding: 25px 15px;
+  text-decoration: none;
+  font-size: 18px
+}
+
+.topnav a:hover {
+  background-color: rgb(232, 220, 212);
+  color: white;
+}
+
+.topnav a.active {
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+h1 {
+  font-family: 'Tangerine', cursive;
+  color: rgb(120, 112, 112);
+  font-size: 80px;
+  margin: 20px auto 0 auto;
+}
+
+h2 {
+  font-family: 'Tangerine', cursive;
+  font-size: 50px;
+  margin: 10px auto 0 auto;
+  color: rgb(120, 112, 112);
+  float: left;
+  margin-left: 35px;
+}
+
+h3 {
+  color: rgb(120, 112, 112);
+  font-size: 30px;
+  margin: 20px auto 0 auto;
+}
+
+h4 {
+  color: rgb(120, 112, 112);
+  font-weight: lighter;
+  font-family: 'Tangerine', cursive;
+  font-size: 220%;
+}
+
+.esileht {
+  max-width: 100%;
+  height: auto;
+}
+
+.minust {
+  float: left;
+  background-image: url(images/minust.jpg);
+  background-size: cover;
+  /*background-repeat: no-repeat;
+  background-position: 50% 50%;*/
+  height: 650px;
+  width: 450px;
+  margin-top: 4%;
+  margin-left: 6%;
+  margin-right: 8%;
+  margin-bottom: 5%;
+}
+
+.tutvustus {
+  float: left;
+  width: 40%;
+  padding-top: 5%;
+  margin-left: 10%;
+  text-align: left;
+  text-indent: 6%;
+  text-align: justify;
+}
+
+.hind,
+.esileht {
+  width: 80%;
+  /*margin: 25px auto 0 auto;*/
+}
+
+.info {
+  text-align: center;
+  padding-top: 1%;
+}
+
+.soovitus {
+  /*background-color: rgb(232, 220, 212);*/
+  background-color: white;
+  border-radius: 3%;
+  margin-top: 4%;
+  width: 100%;
+  padding: 40px;
+  text-align: center;
+ 
+}
+
+.button {
+  background-color: rgb(185, 176, 148);
+  font-family: 'Tangerine', cursive;
+  font-size: 250%;
+  border-radius: 50%;
+  margin-top: 2%;
+  margin-bottom: 5%;
+  width: 40%;
+  padding: 1%;
+  float: center;
+  border: none;
+}
+
+.button:hover {
+  background-color: rgb(226, 216, 188);
+  color: black
+}
+
+.row {
+  margin-right: 5%;
+  margin-left: 5%;
+  width: 90%;
+}
+
+.row,
+.row>.column {
+  padding: 5px;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.pakett {
+  padding: 5%;
+  background-color: rgb(232, 220, 212);
+  border-radius: 5%;
+  margin-top: 20%;
+}
+
+input[type=text],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #5f5f5f;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #ababab;
+}
+
+.container {
+  width: 100%;
+  float: center;
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 5%;
+
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+.rows:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.rows {
+  margin: auto;
+  width: 75%;
+}
+
+.socialmedia {
+  margin: 2%;
+  opacity: 70%;
+}
+
+div.galerii {
+  border: 1px solid #ccc;
+}
+
+div.galerii:hover {
+  border: 1px solid #777;
+}
+
+div.galerii img {
+  width: 100%;
+  height: auto;
+}
+
+div.kirjeldus {
+  padding: 15px;
+  text-align: center;
+}
+
+.resp {
+  padding: 0px 6px;
+  float: left;
+  width: 24.9999%;
+  margin-top: 25px;
+}
+
+.padding {
+  margin-left: 7%;
+  margin-right: 7%;
+  margin-top: 2%;
+}
+
+
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .resp {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+
+  .topnav {
+    display: list-item;
+    z-index: 1000;
+  }
+
+  .topnav.responsive {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+  }
+  .topnav a {
+    color: rgb(120, 112, 112);
+    float: right;
+    text-align: center;
+    padding: 15px 10px;
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+  .col-25,
+  .col-75,
+  input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .esileht {
+    background-image: url(images/esileht.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 40% 40%;
+  }
+
+  .soovitus {
+    text-align: justify;
+  }
+
+  .padding {
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-top: 10%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .resp {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

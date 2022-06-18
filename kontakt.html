@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="et">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Tangerine&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Angela Otsar Photography</title>
+    <link rel="icon" href="images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        @media screen and (max-width: 600px) {
+            h3{
+                padding-top: 10%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2 class="logo">Angela Foto</h2>
+        <div class="topnav" id="myTopnav">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i>
+                <a link rel="stylesheet" href="esileht.html">Esileht</a>
+                <a link rel="stylesheet" href="portfolio.html">Portfolio</a>
+                <a link rel="stylesheet" href="minust.html">Minust</a>
+                <a link rel="stylesheet" href="hinnakiri.html">Hinnakiri</a>
+                <a link rel="stylesheet" href="kontakt.html">Kontakt</a>
+    
+        </div>
+    </header>
+    <h3> Võta minuga ühendust:</h3>
+    <div class="container">
+        <form action="kontakt.php" method="post" >
+            <div class="rows">
+                <div class="col-25">
+                    <label for="name">Nimi *</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="name" name="name" placeholder="Sinu nimi..">
+                </div>
+            </div>
+            <div class="rows">
+                <div class="col-25">
+                    <label for="email">E-mail/telefon *</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="email" name="email" placeholder="Sinu e-mail/telefon..">
+                </div>
+            </div>
+            <div class="rows">
+                <div class="col-25">
+                    <label for="option">Fotosessiooni valik *</label>
+                </div>
+                <div class="col-75">
+                    <select id="option" name="option">
+                        <option value="mini">Minisessioon - 15 min</option>
+                        <option value="portree">Portreepildid - 30 min</option>
+                        <option value="pere">Perepildid - 60 min</option>
+                        <option value="buduaar">Buduaaripildid - 60 min</option>
+                        <option value="uritus">Üritused</option>
+                        <option value="muu">Muu</option>
+                    </select>
+                </div>
+            </div>
+            <div class="rows">
+                <div class="col-25">
+                    <label for="message">Sinu sõnum *</label>
+                </div>
+                <div class="col-75">
+                    <textarea id="message" name="message" placeholder="Kirjuta siia oma sõnum.."
+                        style="height:200px"></textarea>
+                </div>
+            </div>
+            <div class="rows">
+                <input type="submit" value="Saada">
+            </div>
+        </form>
+    </div>
+    <div class="container">
+        <footer>
+            <div class="icongroup">
+                <a href="mailto:angela.otsar@gmail.com" target="_blank" title="Send e-mail" ,>
+                    <img class="socialmedia" src="images/gmail.png" alt="Gmail" ; style=width:40px ; height:40px></a>
+                <a href="https://www.facebook.com/angelaotsarphotography/" target="_blank" title="Visit facebook" ,>
+                    <img class="socialmedia" src="images/fb.png" alt="Facebook" style=width:40px ; height:40px;></a>
+                <a href="https://www.instagram.com/aangelafoto/" target="_blank" title="Visit instagram" ,>
+                    <img class="socialmedia" src="images/insta.png" alt="Instagram" style=width:40px ; height:40px;></a>
+            </div>
+        </footer>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
+</body>
+
+</html>

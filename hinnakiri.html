@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="et">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Tangerine&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Angela Otsar Photography</title>
+    <link rel="icon" href="images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>   
+        .info{
+            text-align: justify;
+            width:50%;
+            margin-left: 8%;
+            margin-bottom: 3%;
+        }
+    
+       @media screen and (max-width: 600px) {
+        h3{
+            font-size: 20px;
+        }
+        .pakett{
+            justify-content:space-around
+        }
+        /*.column {
+            width:50%;
+            height:260px;
+        }
+
+        .row {
+            float: left;
+            width:90%;
+            margin-left:5% ;
+            margin-right: 5%;
+            justify-content: space-between;
+        }*/
+        .column {
+            width: 90%;
+            margin-left: 5%;
+            height:240px;
+        }
+
+        .row {
+            float: center;
+            width: 90%;
+        }
+        
+        .info{
+            padding-top: 18%;
+            width:75%;
+            margin-left: 12%;
+        }
+
+        .button{
+        font-size: 200%;
+        border-radius: 50%;
+        margin-top: 2%;
+        margin-bottom: 5%;
+        width: 80%;
+        padding: 3%;
+        float: center;
+        border: none;
+        }
+        
+            }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2 class="logo" >Angela Foto</h2>
+        <div class="topnav" id="myTopnav">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i>
+                <a link rel="stylesheet" href="esileht.html">Esileht</a>
+                <a link rel="stylesheet" href="portfolio.html">Portfolio</a>
+                <a link rel="stylesheet" href="minust.html">Minust</a>
+                <a link rel="stylesheet" href="hinnakiri.html">Hinnakiri</a>
+                <a link rel="stylesheet" href="kontakt.html">Kontakt</a>
+    
+        </div>
+    </header>
+    <div class="row">
+        <div class="column">
+            <div class="pakett">
+                <h3>Minisessioon</h3>
+                <p>15 minutit</p>
+                <p>Kuni 10 töödeldud pilti</p>
+                <p>25 €</p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="pakett">
+                <h3>Portree</h3>
+                <p>30 minutit</p>
+                <p>Vähemalt 25 töödeldud pilti</p>
+                <p>40 €</p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="pakett">
+                <h3>Pere/Buduaar</h3>
+                <p>60 minutit</p>
+                <p>Vähemalt 45 töödeldud pilti</p>
+                <p>60 €</p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="pakett">
+                <h3>Üritused</h3>
+                <p>Pulmad, sünnipäevad, tüdrukute õhtud</p>
+                <p>Pildistamise kestvus ja hind kokkuleppel</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="info">
+        <p>* Privaatsete piltide puhul lisandub paketile 15€.</p>
+        <p>* Stuudios pildistamisel lisandub stuudio renditasu 35€.</p>
+        <p>* Tallinnast väljaspool pildistamisel lisandub kütusekulu kokkuleppel</p>
+        <p>* Hinnad sisaldavad käibemaksu</p>
+    </div>
+
+
+    <button class="button" onclick="document.location= href='soovitused.html'">Soovitused pildistamiseks leiad
+        siit</button>
+
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
+</body>
+
+</html
